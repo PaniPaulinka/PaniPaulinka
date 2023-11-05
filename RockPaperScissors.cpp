@@ -14,6 +14,8 @@ char getComputerOption() {
     if(num==1) return 'r';
     if(num==2) return 'p';
     if(num==3) return 's';
+
+    return ' ';
 }
 
 char getUserOption() {
@@ -21,7 +23,7 @@ char getUserOption() {
     cout << "Rock, Paper and Scissors Game!" << endl;
     cout << "Choose one of the following options" << endl;
     cout << "___________________________________" << endl;
-    cout << "(r) for the rock" << endl "(p) for paper" << endl << "(s) for scisors" << endl;
+    cout << "(r) for the rock" << endl << "(p) for paper" << endl << "(s) for scisors" << endl;
     cin >> c;
 
     while (c!='r' && c!='p' && c!='s')
